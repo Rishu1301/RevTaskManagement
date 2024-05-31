@@ -78,8 +78,8 @@ public class TaskController {
         return taskService.getTasksByProjectId(projectId);
     }
 
-    @PostMapping("/createTasks/{id}")
-    public ResponseEntity<Task> createTask1(@RequestBody Task task, @PathVariable Long memberId) {
+    @PostMapping("/createTasks")
+    public ResponseEntity<Task> createTask1(@RequestBody Task task, @RequestParam Long memberId) {
 //        return taskService.createTask1(task, memberId);
         Task createdTask = taskService.createTask1(task, memberId);
         System.out.println("mem id" + memberId);
