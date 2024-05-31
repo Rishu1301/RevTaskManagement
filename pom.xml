@@ -14,7 +14,7 @@
 	<name>RevTask</name>
 	<description>RevTask is a project Management application to manage the project and task related to that project.</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
